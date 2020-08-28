@@ -5,8 +5,9 @@ using UnityEngine.UI;
 
 public class lifeCounter : MonoBehaviour
 {
-    public static int heart = 3;
-    Text life = null;
+    [SerializeField] public static int heart = 3;
+
+     private Text life = null;
 
     // Start is called before the first frame update
     void Start()

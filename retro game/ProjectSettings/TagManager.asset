@@ -10,6 +10,7 @@ TagManager:
   - enemy
   - asteroid
   - Cure
+  - music
   layers:
   - Default
   - TransparentFX
