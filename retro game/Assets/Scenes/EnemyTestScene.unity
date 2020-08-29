@@ -1651,7 +1651,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16c435eca84c51a459524238072528d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemy: {fileID: 627186416721091165, guid: d703d0610cdc7824ea78e93e75cd5bea, type: 3}
+  enemy:
+  - {fileID: 627186416721091165, guid: d703d0610cdc7824ea78e93e75cd5bea, type: 3}
+  - {fileID: 627186416721091165, guid: d703d0610cdc7824ea78e93e75cd5bea, type: 3}
   spawnTime: 3
   spawnPoints:
   - {fileID: 1186968227}
@@ -2330,7 +2332,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.34117648, g: 0.32156864, b: 0.32156864, a: 0}
+  m_BackGroundColor: {r: 0.22745098, g: 0.22745098, b: 0.22745098, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -2781,7 +2783,7 @@ GameObject:
   - component: {fileID: 2820258927484398925}
   - component: {fileID: 6294031286043986247}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: shootPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2801,7 +2803,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bullet: {fileID: 5073606410655341924, guid: 9af4f51d868d4cf499aa0b34b8e5861c, type: 3}
   audio: {fileID: 861556409330306892}
-  shootDelay: 0.5
+  shootDelay: 0.48
 --- !u!61 &7038644390517582198
 BoxCollider2D:
   m_ObjectHideFlags: 0
