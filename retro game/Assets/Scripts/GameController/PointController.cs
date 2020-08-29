@@ -6,17 +6,51 @@ using UnityEngine.UI;
 public class PointController : MonoBehaviour
 {
     public static int scoreValue;
-    Text score = null;
+    [SerializeField] private int highScore;
+
+    public Text score = null;
+    public Text highS;
+
+    public bool isActiveScore;
+    public bool isActiveHighScore;
+
+    
 
     void Start() 
     {
         scoreValue = 0;
-        score = GetComponent<Text>();
+        //score = GetComponent<Text>();
     }
 
     void Update()
     {
-        score.text = "Score: " + scoreValue;
-        
+        CheckHighScore();
+
+        if (isActiveScore)
+            GetScoreText();
+
+        if (isActiveHighScore)
+            GetHighScoreText();
+
     }
+
+    void CheckHighScore() 
+    {
+        if (scoreValue > highScore) 
+        {
+            highScore = scoreValue;
+        }
+    }
+
+    void GetScoreText() 
+    {
+        score.text = "Score: " + scoreValue;
+    }
+
+    void GetHighScoreText() 
+    {
+        highS.text = "High Score: " + highScore; 
+    }
+
+
 }
