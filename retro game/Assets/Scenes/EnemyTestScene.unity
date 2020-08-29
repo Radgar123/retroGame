@@ -176,7 +176,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Press Any Key
+  m_text: Press Q Key
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ba1697c31bb977e498a9aa44e91e9807, type: 2}
   m_sharedMaterial: {fileID: -8327062288990960020, guid: ba1697c31bb977e498a9aa44e91e9807,
@@ -411,6 +411,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneName: Menu
+  keyName: q
 --- !u!1 &460947053
 GameObject:
   m_ObjectHideFlags: 0
