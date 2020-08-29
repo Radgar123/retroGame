@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class PointController : MonoBehaviour
 {
@@ -9,7 +10,7 @@ public class PointController : MonoBehaviour
     [SerializeField] private int highScore;
 
     public Text score = null;
-    public Text highS;
+    public TextMeshProUGUI highS;
 
     public bool isActiveScore;
     public bool isActiveHighScore;

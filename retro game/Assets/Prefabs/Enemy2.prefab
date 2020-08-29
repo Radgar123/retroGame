@@ -98,7 +98,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 627186416721091164}
-  speed: 4
+  speed: 5
   movement: {x: 0, y: 0}
 --- !u!58 &627186416721091167
 CircleCollider2D:
