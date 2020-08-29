@@ -5,7 +5,7 @@ using UnityEngine;
 public class AsteroidSpawner : MonoBehaviour
 {
 
-  public int Count=100;
+  public int Count;
   public List<GameObject> spawnPool;
   public GameObject asteroid;
 

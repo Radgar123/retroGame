@@ -5,13 +5,14 @@ using UnityEngine.UI;
 
 public class lifeCounter : MonoBehaviour
 {
-    [SerializeField] public static int heart = 3;
+    public static int heart;
 
      private Text life = null;
 
     // Start is called before the first frame update
     void Start()
     {
+        heart = 3;
         life = GetComponent<Text>();
     }
 

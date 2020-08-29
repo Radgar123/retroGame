@@ -5,11 +5,12 @@ using UnityEngine.UI;
 
 public class PointController : MonoBehaviour
 {
-    public static int scoreValue=0;
+    public static int scoreValue;
     Text score = null;
 
     void Start() 
     {
+        scoreValue = 0;
         score = GetComponent<Text>();
     }
 
