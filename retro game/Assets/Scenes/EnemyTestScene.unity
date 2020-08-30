@@ -2482,9 +2482,9 @@ MonoBehaviour:
   - {fileID: 2017090855}
   - {fileID: 1580552877}
   - {fileID: 1134926586}
-  spawnTime: 530
-  min: 530
-  max: 800
+  spawnTime: 5
+  min: 5
+  max: 7
 --- !u!1 &1186968226
 GameObject:
   m_ObjectHideFlags: 0
