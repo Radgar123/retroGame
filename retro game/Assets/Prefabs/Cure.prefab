@@ -10,12 +10,11 @@ GameObject:
   m_Component:
   - component: {fileID: 627186416721091160}
   - component: {fileID: 627186416721091161}
-  - component: {fileID: 627186416721091166}
   - component: {fileID: 627186416721091167}
   - component: {fileID: 627186416721091164}
-  - component: {fileID: 627186416721091163}
+  - component: {fileID: 326798718772135883}
   m_Layer: 0
-  m_Name: Enemy4
+  m_Name: Cure
   m_TagString: enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -30,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 627186416721091165}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.45, y: 0.45, z: 0.45}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -74,7 +73,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: db2a925120ca50549a5c8bb60c938c23, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2f7ff24f101d3d14ab89db77c1ccf9d0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -85,21 +84,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &627186416721091166
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 627186416721091165}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e4957f0bdd7b63147924b6723a8d11c4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rb: {fileID: 627186416721091164}
-  speed: 6.5
-  movement: {x: 0, y: 0}
 --- !u!58 &627186416721091167
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -137,7 +121,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &627186416721091163
+--- !u!114 &326798718772135883
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -146,7 +130,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 627186416721091165}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7b4d7c1a27e96bc4a976f50b91a9d741, type: 3}
+  m_Script: {fileID: 11500000, guid: 43a7a25275ae34945b82a541f5ce8532, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  value: 30

@@ -26,6 +26,8 @@ public class DestroyPlayer : MonoBehaviour
             }
         }
 
+       
+
         if (collision.gameObject.tag == "asteroid")
         {
             Destroy(gameObject);
@@ -33,10 +35,10 @@ public class DestroyPlayer : MonoBehaviour
             OpenPanel();
         }
 
-        if (collision.gameObject.tag == "Cure")
+       /* if (collision.gameObject.tag == "Cure")
         {
             lifeCounter.heart += 1;
-        }
+        */
 
     }
 
