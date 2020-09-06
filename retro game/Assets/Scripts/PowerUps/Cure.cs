@@ -14,7 +14,15 @@ public class Cure : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            lifeCounter.heart += 1;
+            if (lifeCounter.heart >= 3) 
+            {
+                lifeCounter.heart += 0;
+            }
+            else
+                lifeCounter.heart += 1;
+
+
+
             Destroy(gameObject);
         }
     }
