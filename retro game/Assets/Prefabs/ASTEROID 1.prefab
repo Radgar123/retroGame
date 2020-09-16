@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 4514906862102994148}
   - component: {fileID: 8889304445924600621}
   - component: {fileID: 5369240611799382570}
+  - component: {fileID: 3706760108999538863}
   m_Layer: 0
   m_Name: ASTEROID 1
   m_TagString: enemy
@@ -175,7 +176,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d68d9a2545f7a6c468b37b014cda25fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spedd: 0.1
+  speed: 10
 --- !u!114 &5369240611799382570
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -188,3 +189,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74a81962bcaf8eb4fa816b4ff70bf6f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 1
+--- !u!205 &3706760108999538863
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3508808252847326459}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: 0, y: 0, z: 0}
+  m_Size: 1
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.6
+    fadeTransitionWidth: 0
+    renderers: []
+  - screenRelativeHeight: 0.3
+    fadeTransitionWidth: 0
+    renderers: []
+  - screenRelativeHeight: 0.1
+    fadeTransitionWidth: 0
+    renderers: []
+  m_Enabled: 1

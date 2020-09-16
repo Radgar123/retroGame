@@ -6,6 +6,8 @@ public class AsteroidRotator : MonoBehaviour
 {
     private float angle;
 
+    [SerializeField] private int speed = 1;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -18,7 +20,7 @@ public class AsteroidRotator : MonoBehaviour
 
     private void Update()
     {
-        transform.Rotate(new Vector3(0, 0, angle) * Time.deltaTime);
+        transform.Rotate(new Vector3(0, 0, angle) * speed *  Time.deltaTime);
     }
 
 }

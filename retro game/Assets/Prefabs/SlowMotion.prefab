@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 627186416721091161}
   - component: {fileID: 627186416721091167}
   - component: {fileID: 627186416721091164}
-  - component: {fileID: 326798718772135883}
+  - component: {fileID: 6538442229072788674}
+  - component: {fileID: 5457635076392569685}
   m_Layer: 0
-  m_Name: Cure
+  m_Name: SlowMotion
   m_TagString: Cure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -73,7 +74,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 2f7ff24f101d3d14ab89db77c1ccf9d0, type: 3}
+  m_Sprite: {fileID: 21300000, guid: cbfb7c75fbe3c4f4e95bbdfadf776942, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -121,7 +122,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &326798718772135883
+--- !u!114 &6538442229072788674
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -130,6 +131,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 627186416721091165}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 43a7a25275ae34945b82a541f5ce8532, type: 3}
+  m_Script: {fileID: 11500000, guid: 0be92a2525f609247917b130b39c4a46, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timeManager: {fileID: 5457635076392569685}
+--- !u!114 &5457635076392569685
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 627186416721091165}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4df16dac288e4694c85e4c575f482bd6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slowdownFactor: 0.1
+  slowdownLength: 2
