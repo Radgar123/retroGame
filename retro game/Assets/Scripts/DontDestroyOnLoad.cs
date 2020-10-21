@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class DontDestroyOnLoad : MonoBehaviour
 {
+    [SerializeField] private string tag;
 
     private void Awake()
     {
-        GameObject[] obj = GameObject.FindGameObjectsWithTag("music");
+        GameObject[] obj = GameObject.FindGameObjectsWithTag(tag);
 
         if (obj.Length > 1)
             Destroy(this.gameObject);

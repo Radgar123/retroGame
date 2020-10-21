@@ -25,6 +25,8 @@ public class PointController : MonoBehaviour
 
     void Update()
     {
+        score = GameObject.FindWithTag("score").GetComponent<Text>();
+
         CheckHighScore();
 
         if (isActiveScore)

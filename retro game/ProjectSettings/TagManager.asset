@@ -11,6 +11,10 @@ TagManager:
   - asteroid
   - Cure
   - music
+  - gc
+  - heart
+  - hr
+  - score
   layers:
   - Default
   - TransparentFX

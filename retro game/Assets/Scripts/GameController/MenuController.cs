@@ -7,14 +7,16 @@ public class MenuController : MonoBehaviour
 {
 
     [SerializeField]  string scena1;
+    [SerializeField] string key;
 
 
     public void Update() 
     {
-        if (Input.GetKey("space"))
+        if (Input.GetKey(key))
         {
             SceneManager.LoadScene(scena1);
             //Time.timeScale = 1f;
+            Destroy(GameObject.FindWithTag("gc"));
         }
 
     }
